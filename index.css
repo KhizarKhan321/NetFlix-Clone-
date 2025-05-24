@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Chango&family=Charm:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Eater&family=Mountains+of+Christmas:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section Start */
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Assets/image/BG.jpg");
+    height: 644px;
+    position: relative;
+    justify-content: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    margin: auto;
+    align-items: center;
+    height: 72px;
+}
+
+nav img {
+    position: relative;
+    z-index: 1;
+    width: 110px;
+    cursor: pointer;
+}
+
+nav button {
+    position: relative;
+    width: 100px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.Hero {
+    height: calc(100% - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    position: relative;
+    font-family: "Noto Sans", sans-serif;
+    padding: 0 23px;
+
+}
+
+.Hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.sepration {
+    background-color: rgb(43, 42, 42);
+    height: 8px;
+}
+
+.btn-english {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgba(93, 91, 91, 0.312);
+    color: white;
+}
+
+.btn-red-signin {
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.btn-red-get {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 125px 7px 5px;
+    font-size: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    background-color: rgba(23, 23, 23, 0.5);
+    text-align: center;
+}
+
+/* Header Section End */
+
+
+
+/* Tv Section First Start */ 
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 1300px){
+    body{
+        background-color:  rgb(88, 58, 69);
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+}
+.secimg{
+    position: relative;
+    top: 9px;
+    /* z-index: 1; */
+}
+.secimg img{
+    width: 673px;
+    z-index: 1;
+    position: relative;
+    margin: 10px;
+    top: -20px;
+    
+}
+
+.secimg video{
+    position: absolute;
+    width: 471px;
+    top: 129px;
+    right: 113.5px;
+    /* z-index: 1; */
+}
+
+.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    /* line-height: 2; */
+}
+
+.first > div:nth-child(1){
+    font-size: 60px;
+    font-weight: bolder;
+    /* line-height: 2; */
+    padding: 24px 0;
+}
+
+.first > div :nth-child(2){
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 2;
+}
+/* Tv Sections First End */ 
+
+/*Frequently Asked Questions[FAQs] Start*/
+
+.FAQs h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 48px;
+}
+
+.faqbox:hover{
+    background-color:rgb(95, 93, 93);
+}
+
+.faqbox svg{
+    filter: invert();
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 42, 42);
+    border-radius: 18px;
+    border: 1px solid white;
+    color: white;
+    font-size: 22px;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+/* Frequently Asked Questions[FAQs] Ends */
+
+/* Footer Section Start */
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+@media screen and (max-width: 1300px){
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        color: white;
+    }
+}
+
+
+
+/* Footer Section End */
+
+
+
+
+
+
+
+
+
+
+
+
+
